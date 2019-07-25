@@ -3,7 +3,7 @@
 
 #Kullanım:
 
-
+```php
 <?php \n
 require("dbSync.php");\n
 
@@ -45,7 +45,7 @@ if($result == 1){\n
 
 ?>\n
 
-
+```
 
 İki veritabanını compare() methodu ile karşılaştırıyoruz
 eğer fark yoksa 0 fark var ise 1 döndürür
