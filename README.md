@@ -74,3 +74,4 @@ Bu uygulama veri kaybına yada hatalı sonuçlara neden olabilir!
 Tamamen eğitim amaçlıdır hiçbir garanti verilmez yada herhangi bir sorumluluk kabul etmemkteyiz!
 Eğer kullanmak istiyorsanız kendi testlerinizi yapıp doğruluğundan emin olduktan sonra kullanın!
 Kullanmadan önce mutlaka 2 veritabanında yedeğini alın!
+```
