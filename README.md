@@ -4,11 +4,8 @@
 #Kullanım:
 
 ```php
-<?php \n
-require("dbSync.php");\n
-
-
-
+<?php 
+require("dbSync.php");
 $db1 = [
             'host' => 'localhost',
             'dbname' => 'test1',
@@ -22,36 +19,36 @@ $db2 = [
             'password' => ''
         ];
 
-$sync = new Dbsync($db1, $db2, true,true,true);\n
+$sync = new Dbsync($db1, $db2, true,true,true);
 
+/*
+* İki veritabanını compare() methodu ile karşılaştırıyoruz
+* eğer fark yoksa 0 fark var ise 1 döndürür
+*/
 
-$result = $sync->compare();\n
+$result = $sync->compare();
 
+if($result == 1){
 
-if($result == 1){\n
-
-
-   $sync->execute();\n
+/*
+* execute()
+* Eğer 2. veritabanı nın tablo ve tablo sütunlarını 1. veritabanı ile eşitlemek istersek
+* execute() ile sorguyu tamamlayabiliriz
+*/
+   $sync->execute();
    
-   
-}else{\n
-
-
+  
+}else{
   echo "İki veritabanı Tablo ve tablo yapıları birbiri ile aynı";\n
- 
- 
-}\n
+}
 
 
-?>\n
+?>
 
 ```
 
-İki veritabanını compare() methodu ile karşılaştırıyoruz
-eğer fark yoksa 0 fark var ise 1 döndürür
 
 
-execute()
-Eğer 2. veritabanı nın tablo ve tablo sütunlarını 1. veritabanı ile eşitlemek istersek
-execute() ile sorguyu tamamlayabiliriz
+
+
 
