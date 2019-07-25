@@ -1,4 +1,7 @@
 # dbsync
+
+MYSQL Structure Synchronization
+
 İki veritabanı arasında yapıları senkronize eder.
 
 #Kullanım:
