@@ -4,10 +4,8 @@
 #Kullanım:
 
 
-<?php
-
-
-require("dbSync.php");
+<?php \n
+require("dbSync.php");\n
 
 
 
@@ -24,28 +22,28 @@ $db2 = [
             'password' => ''
         ];
 
-$sync = new Dbsync($db1, $db2, true,true,true);
+$sync = new Dbsync($db1, $db2, true,true,true);\n
 
 
-$result = $sync->compare();
+$result = $sync->compare();\n
 
 
-if($result == 1){
+if($result == 1){\n
 
 
-   $sync->execute();
+   $sync->execute();\n
    
    
-}else{
+}else{\n
 
 
-  echo "İki veritabanı Tablo ve tablo yapıları birbiri ile aynı";
+  echo "İki veritabanı Tablo ve tablo yapıları birbiri ile aynı";\n
  
  
-}
+}\n
 
 
-?>
+?>\n
 
 
 
