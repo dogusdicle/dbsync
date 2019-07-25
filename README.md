@@ -2,8 +2,14 @@
 İki veritabanı arasında yapıları senkronize eder.
 
 #Kullanım:
+
+
 <?php
+
+
 require("dbSync.php");
+
+
 
 $db1 = [
             'host' => 'localhost',
@@ -20,19 +26,28 @@ $db2 = [
 
 $sync = new Dbsync($db1, $db2, true,true,true);
 
+
 $result = $sync->compare();
+
 
 if($result == 1){
 
+
    $sync->execute();
+   
    
 }else{
 
+
   echo "İki veritabanı Tablo ve tablo yapıları birbiri ile aynı";
-  
+ 
+ 
 }
 
+
 ?>
+
+
 
 İki veritabanını compare() methodu ile karşılaştırıyoruz
 eğer fark yoksa 0 fark var ise 1 döndürür
